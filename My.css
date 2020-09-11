@@ -1,0 +1,97 @@
+form{
+    box-sizing: border-box;
+  }
+  
+  .all .form-item{
+    display: inline-block;
+    width: 49%;
+    
+  }
+
+  .m{
+  margin-right: 0.5em; 
+  }
+  .all input{
+    width: 78%;
+    text-transform: capitalize;
+
+  }
+  .neon_border {
+    width: 70%;
+    height: 100%;
+    padding: 10px;
+    margin: auto;
+  }
+  
+  .form-title {
+    text-align: center;
+  }
+  
+  .form-item {
+    position: relative;
+    padding-top: 30px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    border: 2px rgba(235, 227, 227, 0.603) solid;
+    border-radius: 20px 20px;
+  }
+  
+  label {
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    transition: top 0.5s;
+    color: rgb(119, 139, 153);
+  }
+  
+  input {
+    display: block;
+    width: 90%;
+    padding: 0;
+    margin: auto;
+    margin-bottom: 13px;
+    border-style: none;
+  }
+ 
+  button {
+    display: block;
+    width: 30%;
+    height: 3rem;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 20px 20px;
+    float: right;
+    background-color: rgb(178, 211, 212);
+  }
+  
+  input:focus{
+    outline: none;
+    transition-duration: 0.3s;
+    box-shadow: none;
+  }
+  
+  input:focus+label,
+  input:not(:placeholder-shown)+label {
+    top: 10px;
+    transform: scale(0.7);
+  }
+
+  @media (max-width: 1200px) {
+    .all .form-item{
+      display: inline-block;
+      width: 48%;
+    }
+  }
+ 
+    @media (max-width: 540px) {
+      .all .form-item{
+        display: inline-block;
+        width: 47%;
+      }
+  }
+  @media (max-width: 414px) {
+    .all .form-item{
+      display: block;
+      width: 100%;
+    }
+  }
